@@ -34,7 +34,7 @@ const MenuList: React.FC<IMenuListProps> = ({
 
             <MenuItem
                 title="Página no Facebook"
-                icon="facebook-box"
+                icon="facebook"
                 onPress={handleOpenURL('https://www.facebook.com/fabiopichler.net')}
             />
 
