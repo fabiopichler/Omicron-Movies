@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
-import { NavigationNativeContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import HomeTabNavigator from './HomeTabNavigator';
 
@@ -11,7 +11,7 @@ import FirstAppStartupScreen from '../screens/firstAppStartupScreen/FirstAppStar
 const AppStack = createStackNavigator();
 
 const AppNavigator: React.FC = () => (
-    <NavigationNativeContainer>
+    <NavigationContainer>
         <AppStack.Navigator
             headerMode="none"
             initialRouteName="Home"
@@ -34,7 +34,7 @@ const AppNavigator: React.FC = () => (
                 component={FirstAppStartupScreen}
             />
         </AppStack.Navigator>
-    </NavigationNativeContainer>
+    </NavigationContainer>
 );
 
 export default AppNavigator;

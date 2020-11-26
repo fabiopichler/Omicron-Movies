@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { View, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/core";
