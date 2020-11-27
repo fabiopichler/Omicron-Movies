@@ -14,6 +14,7 @@ import PersonStackScreen from "./PersonStackScreen";
 import AboutHomeScreen from "../screens/aboutHomeScreen/AboutHomeScreen";
 
 import { Color } from "@src/colors";
+import { currentRouteName } from "./homeTabNavigatorHelper";
 
 const styles = StyleSheet.create({
     root: {
@@ -112,24 +113,3 @@ const HomeTabNavigator: React.FC = () => {
 };
 
 export default HomeTabNavigator;
-
-export const storeRouteName = async (name: string) => {
-    try {
-        await AsyncStorage.setItem('AppNavigatorInitialRouteName', name);
-    } catch (e) { }
-};
-
-export const currentRouteName = async (func: (value: string) => void) => {
-    try {
-        const value = await AsyncStorage.getItem('AppNavigatorInitialRouteName');
-
-        if (value !== null) {
-            func(value);
-
-            return;
-        }
-
-    } catch (e) { }
-
-    func('MovieHome');
-};

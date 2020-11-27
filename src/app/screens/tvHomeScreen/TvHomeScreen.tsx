@@ -13,7 +13,7 @@ import FooterInfo from '@src/app/components/footerInfo/FooterInfo';
 import LoadErrorIndicator from '@src/app/components/loadErrorIndicator/LoadErrorIndicator';
 
 import { ITvListResult } from '@src/models/ITvListResult';
-import { storeRouteName } from '@src/app/appNavigator/HomeTabNavigator';
+import { storeRouteName } from '@src/app/appNavigator/homeTabNavigatorHelper';
 import { Tv } from '@src/models/Tv';
 import { IMovieListData } from '@src/app/components/movieList/movieListItem/IMovieListItemProps';
 import { Color } from '@src/colors';

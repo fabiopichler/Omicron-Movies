@@ -17,7 +17,7 @@ import Typography from '@src/app/components/common/typography/Typography';
 
 import { Color } from '@src/colors';
 import { Config } from '@src/config';
-import { currentRouteName } from '@src/app/appNavigator/HomeTabNavigator';
+import { currentRouteName } from '@src/app/appNavigator/homeTabNavigatorHelper';
 
 const AboutBackdrop = require('@src/assets/images/about-backdrop.jpg');
 

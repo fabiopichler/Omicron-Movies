@@ -77,7 +77,8 @@ const Carousel = <T extends ICarouselData>({
                 pagingEnabled
                 onScroll={
                     Animated.event(
-                        [{ nativeEvent: { contentOffset: { x: animVal } } }]
+                        [{ nativeEvent: { contentOffset: { x: animVal } } }],
+                        { useNativeDriver: false }
                     )
                 }
             >

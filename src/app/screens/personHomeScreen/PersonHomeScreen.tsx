@@ -11,7 +11,7 @@ import FooterInfo from '@src/app/components/footerInfo/FooterInfo';
 import MovieList from '@src/app/components/movieList/MovieList';
 import LoadErrorIndicator from '@src/app/components/loadErrorIndicator/LoadErrorIndicator';
 
-import { storeRouteName } from '@src/app/appNavigator/HomeTabNavigator';
+import { storeRouteName } from '@src/app/appNavigator/homeTabNavigatorHelper';
 import { Movie } from '@src/models/Movie';
 import { Color } from '@src/colors';
 import { Person } from '@src/models/Person';

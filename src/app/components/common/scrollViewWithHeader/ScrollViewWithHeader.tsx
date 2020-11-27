@@ -113,7 +113,8 @@ const ScrollViewWithHeader: React.FC<IScrollViewWithHeaderProps> = ({
                 showsVerticalScrollIndicator={false}
                 scrollEventThrottle={16}
                 onScroll={Animated.event(
-                    [{ nativeEvent: { contentOffset: { y: scrollY } } }]
+                    [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+                    { useNativeDriver: false }
                 )}
             >
                 <View style={{ height: HEADER_MAX_HEIGHT + 16 }} />
